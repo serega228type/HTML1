@@ -1,0 +1,8 @@
+function getRandomKey() {
+    const possibleKeys = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+    const randomIndex = Math.floor(Math.random() * possibleKeys.length);
+    return possibleKeys[randomIndex];
+}
+let keyPressed = getRandomKey();
+let loggerMessage = `Вы нажали ${keyPressed} !!!`;
+alert(loggerMessage);
