@@ -1,0 +1,13 @@
+function generateMultiplicationTable() {
+    let table = "";
+
+    for (let row = 1; row <= 10; row++) {
+        for (let col = 1; col <= 10; col++) {
+            table += (row * col).toString().padEnd(4, " ");
+        }
+        table += "\n"; 
+    }
+
+    alert(table);
+}
+generateMultiplicationTable();
